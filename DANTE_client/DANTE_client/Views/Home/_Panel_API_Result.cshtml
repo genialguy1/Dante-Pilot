@@ -1,0 +1,54 @@
+﻿@model IEnumerable<DANTE_client.Models.Defect>
+
+<div class="panel panel-primary">
+    <div class="panel-heading"> API results</div>
+    <div class="panel-body">
+        <table width="100%" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Defect ID</th>
+                    <th>Device</th>
+                    <th>Priority</th>
+                    <th>Occurence</th>
+                    <th>Status</th>
+                    <th>Title</th>
+                    <th>Supplier</th>
+                    <th>Date Created</th>
+                </tr>
+            </thead>
+            @*@if (Model != null && Model.Count > 0)
+            {*@
+                <tbody>
+
+
+
+                    @foreach (var item in Model)
+                {
+                        <tr>
+                            <td>@item.Defectid</td>
+                            <td>@item.defectdevice</td>
+                            <td>@item.getOccurence()</td>
+                            <td>@item.getPriority()</td>
+                            <td>@item.getStatus()</td>
+                            <td>@item.Defectitle</td>
+                            <td>@item.Defectsupplier</td>
+                            <td>@item.Defectdate.ToString("dd/MM/yy")</td>
+                        </tr>
+
+                    }
+
+                    @*else
+                        {
+                        <tr>
+                            <td colspan="7">No Record found</td>
+                        </tr>
+                        }*@
+
+
+                </tbody>
+            @*}*@
+
+
+        </table>
+    </div>
+</div>

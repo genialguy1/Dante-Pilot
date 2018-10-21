@@ -1,0 +1,34 @@
+﻿@model IEnumerable<DANTE_client.Models.Defect>
+
+<div id="Page_defectlist" class="container">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">DANTE Defect tracker</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="pnl_api_details" class="widgets">
+                            @Html.Partial("_Panel_API_Details")
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="pnl_api_inputs" class="widgets">
+                            @Html.Partial("_Panel_API_Inputs")
+                        </div>
+                    </div>
+                </div>
+                <div class="row button-panel">
+                    <input type="button" value="Clear" id="btn_Clear">
+                    <input type="button" value="Fetch Data" id="btn_FetchData">
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="pnl_api_result" class="widgets">
+                            @Html.Partial("_Panel_API_Result", Model)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

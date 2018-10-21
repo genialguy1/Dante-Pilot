@@ -1,0 +1,49 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading"> API details</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4">
+                <label>Environment</label>
+            </div>
+            <div class="col-md-6">
+                <select class="controls" id="ddl_Environment" style="width:102%">
+                    <option value="0">--Select--</option>
+                    <option value="Development">Development</option>
+                    <option value="Pipeline">Pipeline</option>
+                    <option value="Preproduction">Pre-Production</option>
+                    <option value="Production">Production</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Region</label>
+            </div>
+            <div class="col-md-6">
+                <select class="controls" id="ddl_Region" style="width:102%">
+                    <option value="0">--Select--</option>
+                    <option value="America">America</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Host</label>
+            </div>
+            <div class="col-md-8">
+                <input type="text" id="txt_api_host" required class="controls" placeholder="www.api.com"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Port</label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" pattern="[0-9]{1}" required id="txt_api_port" class="controls" placeholder="5000"/>
+            </div>
+        </div>
+    </div>
+</div>
