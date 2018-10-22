@@ -1,0 +1,38 @@
+﻿@{ 
+    Layout = null;
+}
+
+
+<div id="Page_login">
+
+    @using (Html.BeginForm("validateUser", "Home"))
+    {
+        <div class="panel panel-primary" id="login-widget">
+            <div class="panel-heading"> API results</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>User Name</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input class="controls" type="text" name="UserName" id="txt_Login_UserName" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Password</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input class="controls" type="password" name="Password" id="txt_Login_Password" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input id="btn_validate" formaction=@Url.Action("validateUser") type="submit" class="btn btn-primary" value="login" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

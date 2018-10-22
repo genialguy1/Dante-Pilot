@@ -193,6 +193,7 @@
     <Content Include="Views\Home\_Panel_API_Details.cshtml" />
     <Content Include="Views\Home\_Panel_API_Inputs.cshtml" />
     <Content Include="Views\Home\_Panel_API_Result.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
