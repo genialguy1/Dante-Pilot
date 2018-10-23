@@ -25,19 +25,19 @@ namespace DANTE_client.Controllers
             return View("Login");
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public ActionResult validateUser()
         {
-            if (Request.Form["txt_Login_UserName"] == "admin" && Request.Form["txt_Login_Password"] == "admin")
+            if (Request.Form["UserName"] == "admin" && Request.Form["Password"] == "admin")
             {
-                FormsAuthentication.SetAuthCookie(Request.Form["txt_Login_UserName"], true);
-                RedirectToAction("DefectList");
+                FormsAuthentication.SetAuthCookie(Request.Form["UserName"], true);
+                return RedirectToAction("DefectList");
             }
             else
-                RedirectToAction("login");
-
-            return null;
-
+            {
+                return RedirectToAction("login");
+            }
         }
     }
 }

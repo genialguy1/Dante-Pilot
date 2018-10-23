@@ -11,9 +11,8 @@
         });
     });
     $('#btn_FetchData').click(function () {
-        //alert('fetch');
+        // alert('fetch');
 
     });
-
 
 });
