@@ -141,6 +141,7 @@
     <Content Include="Images\concept_1.jpg" />
     <Content Include="Images\concept_2.jpg" />
     <Content Include="Images\concept_3.jpg" />
+    <Content Include="Images\loading.gif" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="scripts\esm\popper-utils.js" />
