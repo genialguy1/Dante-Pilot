@@ -11,7 +11,8 @@
         });
     });
     $('#btn_FetchData').click(function () {
-        // alert('fetch');
+        $('#pnl_api_result .panel-body').addClass('loading');
+       // $('#tbl_Result').show();
 
     });
 
